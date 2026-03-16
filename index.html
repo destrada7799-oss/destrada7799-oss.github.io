@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Estrada | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tighter">DE<span class="text-blue-400">.</span></div>
+        <div class="space-x-8 text-sm font-medium uppercase tracking-widest hidden md:flex">
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+            <a href="#impact" class="hover:text-blue-400 transition">Impact</a>
+            <a href="mailto:destrada7799@gmail.com" class="bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-500 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-black mb-4 animate-fade-in-up">Daniel Estrada</h1>
+        <p class="text-xl md:text-2xl font-light text-slate-400 max-w-2xl mb-8">
+            Project Manager & Marketing Coordinator at <span class="text-white font-semibold">Compass Real Estate</span>. 
+            Bridging operational excellence with digital growth.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#experience" class="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:scale-105 transition transform">View Projects</a>
+            <button onclick="window.print()" class="glass px-8 py-3 rounded-full font-bold hover:bg-white hover:text-slate-900 transition">Download CV</button>
+        </div>
+    </section>
+
+    <section id="impact" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center p-8 glass rounded-3xl">
+                <div class="text-5xl font-black mb-2 gradient-text">1,000+</div>
+                <div class="text-slate-400 uppercase tracking-widest text-sm">Listings Managed </div>
+                <p class="text-xs mt-2 text-slate-500">Across Miami, WA, ND, & CA</p>
+            </div>
+            <div class="text-center p-8 glass rounded-3xl">
+                <div class="text-5xl font-black mb-2 gradient-text">70%</div>
+                <div class="text-slate-400 uppercase tracking-widest text-sm">Email Open Rate [cite: 26]</div>
+                <p class="text-xs mt-2 text-slate-500">Industry-leading conversion</p>
+            </div>
+            <div class="text-center p-8 glass rounded-3xl">
+                <div class="text-5xl font-black mb-2 gradient-text">60%</div>
+                <div class="text-slate-400 uppercase tracking-widest text-sm">Engagement Growth [cite: 25]</div>
+                <p class="text-xs mt-2 text-slate-500">Meta & Google Ad optimization</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center underline decoration-blue-500 underline-offset-8">Professional Journey</h2>
+        
+        <div class="space-y-12">
+            <div class="relative pl-8 border-l-2 border-blue-500">
+                <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                <span class="text-blue-400 font-mono text-sm uppercase">2023 - Present [cite: 23]</span>
+                <h3 class="text-2xl font-bold">Listing & Marketing Coordinator</h3>
+                <h4 class="text-lg text-slate-300">Compass Real Estate [cite: 21]</h4>
+                <p class="mt-4 text-slate-400 leading-relaxed">
+                    Orchestrating end-to-end listing lifecycles and launching automated ad campaigns via Meta and Google Ads. [cite: 24]
+                </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute -left-2 top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
+                <span class="text-slate-500 font-mono text-sm uppercase">2022 - 2023 [cite: 32]</span>
+                <h3 class="text-2xl font-bold">English Teacher</h3>
+                <h4 class="text-lg text-slate-300">Academia Europea [cite: 30]</h4>
+                <p class="mt-4 text-slate-400 leading-relaxed">
+                    Leveraged "Sprint Management" methodologies in education to manage 10 concurrent digital classrooms. [cite: 37, 58]
+                </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute -left-2 top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
+                <span class="text-slate-500 font-mono text-sm uppercase">2022 [cite: 39]</span>
+                <h3 class="text-2xl font-bold text-slate-300">Lead Generation Specialist</h3>
+                <h4 class="text-lg text-slate-500 italic">Intercontinental Processing Group [cite: 38]</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <p class="text-slate-500 mb-6">Connect with me on social platforms</p>
+        <div class="flex justify-center space-x-6 text-2xl">
+            <a href="https://linkedin.com/in/danielestrada-pm" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:destrada7799@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="mt-10 text-xs text-slate-600 uppercase tracking-widest">© 2026 Daniel Estrada | Built with GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
