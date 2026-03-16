@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .glass {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
             color: white;
             scroll-behavior: smooth;
         }
         .gradient-text {
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .btn-hover:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
         }
     </style>
 </head>
@@ -28,86 +33,85 @@
 
     <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center">
         <div class="text-xl font-bold tracking-tighter">DE<span class="text-blue-400">.</span></div>
-        <div class="space-x-8 text-sm font-medium uppercase tracking-widest hidden md:flex">
+        <div class="space-x-6 text-xs font-medium uppercase tracking-widest hidden md:flex">
             <a href="#about" class="hover:text-blue-400 transition">About</a>
-            <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+            <a href="#experience" class="hover:text-blue-400 transition">Work</a>
             <a href="#impact" class="hover:text-blue-400 transition">Impact</a>
-            <a href="mailto:destrada7799@gmail.com" class="bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-500 transition">Contact</a>
+            <a href="mailto:destrada7799@gmail.com" class="glass px-5 py-2 rounded-full btn-hover border border-blue-400/30">Contact</a>
         </div>
     </nav>
 
     <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-6xl md:text-8xl font-black mb-4 animate-fade-in-up">Daniel Estrada</h1>
-        <p class="text-xl md:text-2xl font-light text-slate-400 max-w-2xl mb-8">
-            Project Manager & Marketing Coordinator at <span class="text-white font-semibold">Compass Real Estate</span>. 
-            Bridging operational excellence with digital growth.
+        <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tight">Daniel Estrada</h1>
+        <p class="text-lg md:text-xl font-light text-slate-400 max-w-2xl mb-10">
+            Specializing in <span class="text-white font-medium">Real Estate Operations</span> and <span class="text-white font-medium">Digital Marketing Strategy</span>.
         </p>
-        <div class="flex space-x-4">
-            <a href="#experience" class="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:scale-105 transition transform">View Projects</a>
-            <button onclick="window.print()" class="glass px-8 py-3 rounded-full font-bold hover:bg-white hover:text-slate-900 transition">Download CV</button>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#experience" class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">View Portfolio</a>
+            <a href="2026 Resume.pdf" download class="glass px-8 py-3 rounded-full font-bold btn-hover">Download CV</a>
         </div>
     </section>
 
-    <section id="impact" class="py-20 bg-slate-900/50">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="text-center p-8 glass rounded-3xl">
-                <div class="text-5xl font-black mb-2 gradient-text">1,000+</div>
-                <div class="text-slate-400 uppercase tracking-widest text-sm">Listings Managed </div>
-                <p class="text-xs mt-2 text-slate-500">Across Miami, WA, ND, & CA</p>
-            </div>
-            <div class="text-center p-8 glass rounded-3xl">
-                <div class="text-5xl font-black mb-2 gradient-text">70%</div>
-                <div class="text-slate-400 uppercase tracking-widest text-sm">Email Open Rate [cite: 26]</div>
-                <p class="text-xs mt-2 text-slate-500">Industry-leading conversion</p>
-            </div>
-            <div class="text-center p-8 glass rounded-3xl">
-                <div class="text-5xl font-black mb-2 gradient-text">60%</div>
-                <div class="text-slate-400 uppercase tracking-widest text-sm">Engagement Growth [cite: 25]</div>
-                <p class="text-xs mt-2 text-slate-500">Meta & Google Ad optimization</p>
+    <section id="impact" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-center text-sm uppercase tracking-[0.3em] text-blue-400 mb-16 font-bold">Measurable Results</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-10 glass rounded-2xl text-center">
+                    <div class="text-5xl font-black gradient-text mb-2">1,000+</div>
+                    <div class="text-slate-300 font-bold uppercase text-xs tracking-widest">Listings Managed</div>
+                    <p class="text-slate-500 text-sm mt-4">100% data integrity across MLS platforms in FL, WA, ND, and CA.</p>
+                </div>
+                <div class="p-10 glass rounded-2xl text-center">
+                    <div class="text-5xl font-black gradient-text mb-2">70%+</div>
+                    <div class="text-slate-300 font-bold uppercase text-xs tracking-widest">Email Open Rate</div>
+                    <p class="text-slate-500 text-sm mt-4">High-conversion campaigns significantly shortening lead cycles.</p>
+                </div>
+                <div class="p-10 glass rounded-2xl text-center">
+                    <div class="text-5xl font-black gradient-text mb-2">60%</div>
+                    <div class="text-slate-300 font-bold uppercase text-xs tracking-widest">Social Growth</div>
+                    <p class="text-slate-500 text-sm mt-4">Increase in engagement through targeted Meta and Google Ad sets.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-24 max-w-4xl mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-16 text-center underline decoration-blue-500 underline-offset-8">Professional Journey</h2>
+    <section id="experience" class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-16 border-l-4 border-blue-500 pl-4">Core Experience</h2>
         
-        <div class="space-y-12">
-            <div class="relative pl-8 border-l-2 border-blue-500">
-                <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
-                <span class="text-blue-400 font-mono text-sm uppercase">2023 - Present [cite: 23]</span>
-                <h3 class="text-2xl font-bold">Listing & Marketing Coordinator</h3>
-                <h4 class="text-lg text-slate-300">Compass Real Estate [cite: 21]</h4>
-                <p class="mt-4 text-slate-400 leading-relaxed">
-                    Orchestrating end-to-end listing lifecycles and launching automated ad campaigns via Meta and Google Ads. [cite: 24]
-                </p>
+        <div class="space-y-16">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <span class="text-blue-400 font-mono text-sm">2023 — PRESENT</span>
+                    <h3 class="text-xl font-bold mt-2 text-white">Compass</h3>
+                    <p class="text-slate-500 text-sm italic">Listing Coordinator</p>
+                </div>
+                <div class="md:col-span-2 text-slate-400 space-y-4">
+                    <p><strong class="text-slate-200">Operations Excellence:</strong> Managing end-to-end lifecycles for 1,000+ properties with absolute accuracy[cite: 82, 89].</p>
+                    <p><strong class="text-slate-200">Growth Marketing:</strong> Executing Facebook/Google Ad campaigns and Instagram content strategies that drive 60% engagement growth[cite: 90, 92].</p>
+                    <p><strong class="text-slate-200">Workflow Optimization:</strong> Integrated contract compliance strategies that reduced listing errors by 15%[cite: 94, 95].</p>
+                </div>
             </div>
 
-            <div class="relative pl-8 border-l-2 border-slate-700">
-                <div class="absolute -left-2 top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
-                <span class="text-slate-500 font-mono text-sm uppercase">2022 - 2023 [cite: 32]</span>
-                <h3 class="text-2xl font-bold">English Teacher</h3>
-                <h4 class="text-lg text-slate-300">Academia Europea [cite: 30]</h4>
-                <p class="mt-4 text-slate-400 leading-relaxed">
-                    Leveraged "Sprint Management" methodologies in education to manage 10 concurrent digital classrooms. [cite: 37, 58]
-                </p>
-            </div>
-
-            <div class="relative pl-8 border-l-2 border-slate-700">
-                <div class="absolute -left-2 top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
-                <span class="text-slate-500 font-mono text-sm uppercase">2022 [cite: 39]</span>
-                <h3 class="text-2xl font-bold text-slate-300">Lead Generation Specialist</h3>
-                <h4 class="text-lg text-slate-500 italic">Intercontinental Processing Group [cite: 38]</h4>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <span class="text-slate-500 font-mono text-sm">2022 — 2023</span>
+                    <h3 class="text-xl font-bold mt-2 text-white">Academia Europea</h3>
+                    <p class="text-slate-500 text-sm italic">English Teacher</p>
+                </div>
+                <div class="md:col-span-2 text-slate-400 space-y-4">
+                    <p><strong class="text-slate-200">Sprint Management:</strong> Coordinated 10 concurrent virtual classes using agile methodologies to ensure seamless delivery[cite: 102].</p>
+                    <p><strong class="text-slate-200">Digital Transformation:</strong> Boosted student engagement by 65% through custom digital resource development[cite: 101].</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-slate-800 text-center">
-        <p class="text-slate-500 mb-6">Connect with me on social platforms</p>
-        <div class="flex justify-center space-x-6 text-2xl">
-            <a href="https://linkedin.com/in/danielestrada-pm" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+    <footer class="py-20 border-t border-slate-900 text-center">
+        <div class="flex justify-center space-x-8 text-xl text-slate-400 mb-8">
+            <a href="https://www.linkedin.com/in/destrada-pm" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:destrada7799@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
         </div>
-        <p class="mt-10 text-xs text-slate-600 uppercase tracking-widest">© 2026 Daniel Estrada | Built with GitHub Pages</p>
+        <p class="text-xs text-slate-600 uppercase tracking-widest">© 2026 Daniel Estrada | Built for Results</p>
     </footer>
 
 </body>
